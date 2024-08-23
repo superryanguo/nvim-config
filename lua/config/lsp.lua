@@ -188,6 +188,11 @@ if utils.executable("ltex-ls") then
 }
 end
 
+if utils.executable("gopls") then
+  lspconfig.gopls.setup {
+}
+
+end
 if utils.executable("clangd") then
   lspconfig.clangd.setup {
     on_attach = custom_attach,

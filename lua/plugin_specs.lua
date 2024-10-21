@@ -496,7 +496,9 @@ local plugin_specs = {
   --ryan add
   { "ctrlpvim/ctrlp.vim", event = "BufRead"  },
   { "scrooloose/nerdcommenter", event = "BufRead"  },
-  { "skanehira/vsession", event = "BufRead"  },
+  { "junegunn/fzf", event = "VimEnter"  },
+  { "junegunn/fzf.vim", event = "VimEnter"  },
+  { "skanehira/vsession", event = "VimEnter"  },
   { "mileszs/ack.vim", event = "BufRead"  },
 
   {

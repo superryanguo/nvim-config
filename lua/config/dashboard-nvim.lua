@@ -270,6 +270,12 @@ conf.header = dashboard_custom_headerTransformer
 
 conf.center = {
   {
+    icon = "$  ",
+    desc = "Session loader                          ",
+    action = "LoadSession ",
+    key = "LoadSession",
+  },
+  {
     icon = "󰈞  ",
     desc = "Find  File                              ",
     action = "Leaderf file --popup",

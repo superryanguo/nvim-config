@@ -219,9 +219,9 @@ keymap.set("i", "<C-A>", "<HOME>")
 keymap.set("i", "<C-E>", "<END>")
 
 -- ryan add for self-use
-keymap.set('n', '<leader>sl', ':LoadSession<CR>', { noremap = true, silent = true,desc = "load session"  })-- 
-keymap.set('n', '<leader>ss', ':SaveSession<CR>', { noremap = true, silent = true,desc = "save session"  })-- 
-keymap.set('n', '<leader>sd', ':DeleteSession<CR>', { noremap = true, silent = true,desc = "del session"  })-- 
+keymap.set('n', '<leader>sl', ':LoadSession<CR>', { noremap = true, silent = true,desc = "load session"  })
+keymap.set('n', '<leader>ss', ':SaveSession<CR>', { noremap = true, silent = true,desc = "save session"  })
+keymap.set('n', '<leader>sd', ':DeleteSession<CR>', { noremap = true, silent = true,desc = "del session"  })
 keymap.set('n', '<Leader>ak', ':Ack!<Space><C-R>=expand("<cword>")<CR><CR>', { noremap = true, silent = true, desc= "find add related in ack" })
 keymap.set('n', '<leader>sk', ':vsp | b #<CR>', { noremap = true, silent = true })
 keymap.set('n', '<leader>so', ':on<CR>', { noremap = true, silent = true })

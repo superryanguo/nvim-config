@@ -73,3 +73,8 @@ vim.g.loaded_matchparen = 1
 
 -- Disable sql omni completion, it is broken.
 vim.g.loaded_sql_completion = 1
+
+-- ryan add for the session save and load
+vim.g.vsession_path = '/home/ght/.vim/mysession'
+vim.g.vsession_ui = 'fzf'
+vim.g.ackprg = 'ag --vimgrep'

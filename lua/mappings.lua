@@ -218,6 +218,21 @@ keymap.set("i", "<A-;>", "<Esc>miA;<Esc>`ii")
 keymap.set("i", "<C-A>", "<HOME>")
 keymap.set("i", "<C-E>", "<END>")
 
+-- ryan add for self-use
+keymap.set('n', '<leader>sl', ':LoadSession<CR>', { noremap = true, silent = true,desc = "load session"  })-- 
+keymap.set('n', '<leader>ss', ':SaveSession<CR>', { noremap = true, silent = true,desc = "save session"  })-- 
+keymap.set('n', '<leader>sd', ':DeleteSession<CR>', { noremap = true, silent = true,desc = "del session"  })-- 
+keymap.set('n', '<Leader>ak', ':Ack!<Space><C-R>=expand("<cword>")<CR><CR>', { noremap = true, silent = true, desc= "find add related in ack" })
+keymap.set('n', '<leader>sk', ':vsp | b #<CR>', { noremap = true, silent = true })
+keymap.set('n', '<leader>so', ':on<CR>', { noremap = true, silent = true })
+keymap.set('n', '<leader>bj', ':b#<CR>', { noremap = true, silent = true })
+keymap.set('n', '<Leader><Leader>m', '<ESC>:vert term<CR>', { noremap = true, silent = true })
+keymap.set('n', '<C-J>', '<C-W>j', { noremap = true, silent = true })
+keymap.set('n', '<C-K>', '<C-W>k', { noremap = true, silent = true })
+keymap.set('n', '<C-L>', '<C-W>l', { noremap = true, silent = true })
+keymap.set('n', '<C-N>', '<C-W>h', { noremap = true, silent = true })
+--keymap.set('n', '<C-H>', '<C-W>h', { noremap = true, silent = true })
+
 -- Go to beginning of command in command-line mode
 keymap.set("c", "<C-A>", "<HOME>")
 

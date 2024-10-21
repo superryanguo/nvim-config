@@ -494,6 +494,8 @@ local plugin_specs = {
   -- Session management plugin
   --{ "tpope/vim-obsession", cmd = "Obsession" },
   --ryan add
+  { "ctrlpvim/ctrlp.vim", event = "BufRead"  },
+  { "scrooloose/nerdcommenter", event = "BufRead"  },
   { "skanehira/vsession", event = "BufRead"  },
   { "mileszs/ack.vim", event = "BufRead"  },
 

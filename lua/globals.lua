@@ -78,3 +78,6 @@ vim.g.loaded_sql_completion = 1
 vim.g.vsession_path = '/home/ght/.vim/mysession'
 vim.g.vsession_ui = 'fzf'
 vim.g.ackprg = 'ag --vimgrep'
+--let g:ctrlp_map = '<c-p>'
+vim.g.ctrlp_map = '<c-p>'
+vim.g.ctrlp_cmd = 'CtrlPBuffer'

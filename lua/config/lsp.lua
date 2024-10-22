@@ -188,11 +188,33 @@ if utils.executable("ltex-ls") then
 }
 end
 
+--ryan add
 if utils.executable("gopls") then
   lspconfig.gopls.setup {
 }
-
 end
+
+--you need add a jason and for vue support , check https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#ts_ls
+--if utils.executable("typescript-language-server") then
+  --lspconfig.ts_ls.setup {
+--}
+--end
+
+--vue
+if utils.executable("vls") then
+  lspconfig.vuels.setup {
+}
+end
+--html
+--Enable (broadcasting) snippet capability for completion
+local htmlcapabilities = vim.lsp.protocol.make_client_capabilities()
+htmlcapabilities.textDocument.completion.completionItem.snippetSupport = true
+if utils.executable("vscode-html-language-server") then
+  lspconfig.html.setup {
+  capabilities = htmlcapabilities,
+}
+end
+
 if utils.executable("clangd") then
   lspconfig.clangd.setup {
     on_attach = custom_attach,

@@ -621,8 +621,8 @@ local plugin_specs = {
                                           -- for e.g. denols and tsserver you may want to enable one lsp server at a time.
                                           -- default value: {}
     diagnostic = {
-      underline = false,
-      virtual_text = false, -- show virtual for diagnostic message
+      underline = true,
+      virtual_text = true, -- show virtual for diagnostic message
       update_in_insert = false, -- update diagnostic message in insert mode
       float = {                 -- setup for floating windows style
         focusable = false,
@@ -703,7 +703,7 @@ local plugin_specs = {
   }
 })
   end,
-  event = {"CmdlineEnter"},
+  event = {"BufRead"},
   --ft = {"go", 'gomod'}
   },
 

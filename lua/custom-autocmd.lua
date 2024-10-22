@@ -16,6 +16,16 @@ api.nvim_create_autocmd({ "BufRead" }, {
   end,
 })
 
+--ryan add, cmd=:AutoSaveToggle
+vim.api.nvim_create_augroup("ft_markdown", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"markdown", "txt", "html"},
+    callback = function()
+        vim.b.auto_save = 1
+    end,
+    group = "ft_markdown",
+})
+
 -- highlight yanked region, see `:h lua-highlight`
 local yank_group = api.nvim_create_augroup("highlight_yank", { clear = true })
 api.nvim_create_autocmd({ "TextYankPost" }, {

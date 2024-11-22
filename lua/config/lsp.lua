@@ -191,6 +191,12 @@ end
 --ryan add
 if utils.executable("gopls") then
   lspconfig.gopls.setup {
+	 --settings = {
+        --gopls = {
+            --usePlaceholders = false,  -- 禁用占位符
+            --staticcheck = true,       -- 启用静态检查（可选）
+        --},
+    --},
 }
 end
 
